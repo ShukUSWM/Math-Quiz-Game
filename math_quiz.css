@@ -27,6 +27,12 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #752380;
+}
+
 form {
     margin-top: 20px;
 }
@@ -44,7 +50,7 @@ select, input[type="number"] {
     border: 1px solid #ccc;
     border-radius: 4px;
     width: 100%;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .choice-container {
@@ -70,7 +76,7 @@ button {
 }
 
 button:hover {
-    background-color: #234e80;
+    background-color: #752380;
 }
 
 .remark {
@@ -83,7 +89,7 @@ a {
     display: block;
     margin-top: 20px;
     text-align: center;
-    color: #2b6cb0;
+    color: #752380;
     text-decoration: none;
 }
 
@@ -99,15 +105,15 @@ a:hover {
     text-align: center;
     margin-top: 20px;
     font-size: 18px;
-    color: #2b6cb0;
+    color: #752380;
 }
 
 .game-over a {
     margin-top: 15px;
     font-size: 16px;
     text-decoration: none;
-    color: #2b6cb0;
-    border: 1px solid #2b6cb0;
+    color: #752380;
+    border: 1px solid #752380;
     border-radius: 4px;
     padding: 10px 20px;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -115,27 +121,8 @@ a:hover {
 
 .game-over a:hover {
     background-color: #2b6cb0;
-    color: #fff;
+    color: #ebf703;
 }
-
-#custom-range-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px; 
-    margin-top: 10px;
-}
-
-#custom-range-container input[type="number"] {
-    width: calc(50% - 10px); 
-    margin-right: 10px;
-}
-
-#custom-range-container div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 
 #custom-range-container {
     display: none;
@@ -145,8 +132,34 @@ a:hover {
     display: block;
 }
 
+.review-missed {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
 
-#num_questions {
-    margin-top: 10px;
-    width: 100%; 
+.review-missed ul {
+    list-style: none;
+    padding: 0;
+}
+
+.review-missed li {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.review-missed strong {
+    display: block;
+    color: #333;
+}
+
+.user-answer {
+    color: #d9534f; /* Red for incorrect answers */
+}
+
+.correct-answer {
+    color: #5cb85c; /* Green for correct answers */
 }
